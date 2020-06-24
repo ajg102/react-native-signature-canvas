@@ -1,7 +1,8 @@
 {
-  "name": "react-native-signature-canvas",
-  "version": "2.6.0",
-  "description": "React Native Drawing Component based Canvas for Android && IOS && expo",
+  "name": "react-native-drawing-canvas",
+  "version": "1.0.0",
+  "private": false,
+  "description": "React Native Drawing Component based on Canvas for Android && IOS && expo",
   "main": "index.js",
   "scripts": {
     "build": "npm publish"
