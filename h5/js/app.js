@@ -56,6 +56,14 @@ const content = `
             }
         }
     }
+
+    function changePenColor(color) {
+        signaturePad.changePenColor(color)
+    }
+
+    function changeStrokeWidth(min, max) {
+        signaturePad.changeStrokeWidth(min, max)
+    }
     
     saveButton.addEventListener("click", readSignature);
 `;

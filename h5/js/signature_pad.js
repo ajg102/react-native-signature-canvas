@@ -215,6 +215,13 @@ const content = `
           this._reset();
           this._isEmpty = true;
       };
+      SignaturePad.prototype.changePenColor = function (color) {
+        this.penColor = color
+      };
+      SignaturePad.prototype.changeStrokeWidth = function (min, max) {
+        this.minWidth = min;
+        this.maxWidth = max;
+      };
       SignaturePad.prototype.fromDataURL = function (dataUrl, options, callback) {
           var _this = this;
           if (options === void 0) { options = {}; }
