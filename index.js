@@ -120,6 +120,14 @@ const SignatureView = forwardRef(
       }
     }, [strokeWidth]);
 
+    useEffect(() => {
+      if (webViewRef.current) {
+        webViewRef.current.injectJavaScript(
+          "setBackgroundImage('" + dataURL + "');true;"
+        );
+      }
+    }, [dataURL]);
+
     useImperativeHandle(
       ref,
       () => ({
@@ -131,6 +139,11 @@ const SignatureView = forwardRef(
         clearSignature: () => {
           if (webViewRef.current) {
             webViewRef.current.injectJavaScript("clearSignature();true;");
+          }
+        },
+        undoStroke: () => {
+          if (webViewRef.current) {
+            webViewRef.current.injectJavaScript("undoStroke();true;");
           }
         },
       }),

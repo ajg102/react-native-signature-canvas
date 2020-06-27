@@ -28,6 +28,6 @@
   },
   "homepage": "https://github.com/ajg102/react-native-signature-canvas#readme",
   "dependencies": {
-    "react-native-webview": "8.1.1"
+    "react-native-webview": "^9.0.2"
   }
 }

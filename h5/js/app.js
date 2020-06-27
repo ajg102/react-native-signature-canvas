@@ -64,6 +64,18 @@ const content = `
     function changeStrokeWidth(min, max) {
         signaturePad.changeStrokeWidth(min, max)
     }
+
+    function undoStroke() {
+        const data = signaturePad.toData()
+        if (data) {
+            data.pop()
+            signaturePad.fromData(data);
+        }
+    }
+
+    function setBackgroundImage(dataURL) {
+        signaturePad.fromDataURL(dataURL + '');        
+    }
     
     saveButton.addEventListener("click", readSignature);
 `;

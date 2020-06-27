@@ -30,7 +30,6 @@ const content = (script) =>
       left: 50%;
       margin-left: -350px;
       margin-top: -200px;
-      border: 1px solid #e8e8e8;
       background-color: #fff;
       box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.08) inset;
     }
@@ -69,7 +68,6 @@ const content = (script) =>
       top: 0px;
       bottom: 0px;
       background-color: white;
-      border: 1px solid white;
     }
     
     .m-signature-pad--body
