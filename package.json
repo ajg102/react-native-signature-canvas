@@ -1,6 +1,6 @@
 {
   "name": "react-native-drawing-canvas",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": false,
   "description": "React Native Drawing Component based on Canvas for Android && IOS && expo",
   "main": "index.js",
